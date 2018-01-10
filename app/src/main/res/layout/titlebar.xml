@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/actionbar_background">
+<LinearLayout
+    android:id="@+id/select_city"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_alignParentLeft="true"
+    >
+    <ImageView
+        android:id="@+id/btn_select_city"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/title_city"
+        android:background="@drawable/actionbar_btn"
+        />
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:background="@color/gray"
+        />
+</LinearLayout>
+    <TextView
+        android:text="南京"
+        android:id="@+id/city_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/select_city"
+        android:layout_toLeftOf="@+id/others"
+        android:layout_centerInParent="true"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_CityName"
+        />
+<LinearLayout
+    android:id="@+id/others"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true"
+    >
+<ImageView
+    android:id="@+id/city_location"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:background="@drawable/actionbar_btn"
+    android:src="@mipmap/base_action_bar_action_city"
+    />
+    <ImageView
+        android:id="@+id/city_share"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/actionbar_btn"
+        android:src="@mipmap/base_action_bar_share"
+        />
+    <ImageView
+        android:id="@+id/city_list"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/actionbar_btn"
+        android:src="@mipmap/list_city"
+        />
+</LinearLayout>
+</RelativeLayout>
